@@ -5,7 +5,7 @@
  Source Server Type    : MySQL
  Source Server Version : 50718
  Source Host           : localhost:3306
- Source Schema         : lmf
+ Source Schema         : saas
 
  Target Server Type    : MySQL
  Target Server Version : 50718
@@ -910,7 +910,7 @@ INSERT INTO `sys_oper_log` VALUES (121, '菜单管理', 3, 'com.saas.admin.contr
 INSERT INTO `sys_oper_log` VALUES (122, '菜单管理', 3, 'com.saas.admin.controller.system.SysMenuController.remove()', 'DELETE', 1, '管理员', NULL, '/system/menu/105', '127.0.0.1', '内网IP', '{menuId=105}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2021-01-14 16:57:18');
 INSERT INTO `sys_oper_log` VALUES (123, '菜单管理', 3, 'com.saas.admin.controller.system.SysMenuController.remove()', 'DELETE', 1, '管理员', NULL, '/system/menu/107', '127.0.0.1', '内网IP', '{menuId=107}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2021-01-14 16:57:23');
 INSERT INTO `sys_oper_log` VALUES (124, '菜单管理', 3, 'com.saas.admin.controller.system.SysMenuController.remove()', 'DELETE', 1, '管理员', NULL, '/system/menu/110', '127.0.0.1', '内网IP', '{menuId=110}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2021-01-14 16:57:32');
-INSERT INTO `sys_oper_log` VALUES (125, '个人信息', 2, 'com.saas.admin.controller.system.SysProfileController.updateProfile()', 'PUT', 1, '管理员', NULL, '/system/user/profile', '127.0.0.1', '内网IP', '{\"createUserId\":1,\"updateUserId\":1,\"sex\":1,\"mobile\":\"18700092817\",\"admin\":true,\"loginDate\":1609143084000,\"updateTime\":1609143070000,\"delFlag\":0,\"roleList\":[],\"roleIds\":[1],\"createTime\":1609143060000,\"loginIp\":\"1.1.1.1\",\"loginName\":\"admin\",\"name\":\"管理员\",\"id\":1,\"email\":\"admin@lmf.com\",\"statusFlag\":1}', 'null', 1, '不能修改超级管理员用户', '2021-01-14 17:31:40');
+INSERT INTO `sys_oper_log` VALUES (125, '个人信息', 2, 'com.saas.admin.controller.system.SysProfileController.updateProfile()', 'PUT', 1, '管理员', NULL, '/system/user/profile', '127.0.0.1', '内网IP', '{\"createUserId\":1,\"updateUserId\":1,\"sex\":1,\"mobile\":\"18700092817\",\"admin\":true,\"loginDate\":1609143084000,\"updateTime\":1609143070000,\"delFlag\":0,\"roleList\":[],\"roleIds\":[1],\"createTime\":1609143060000,\"loginIp\":\"1.1.1.1\",\"loginName\":\"admin\",\"name\":\"管理员\",\"id\":1,\"email\":\"admin@saas.com\",\"statusFlag\":1}', 'null', 1, '不能修改超级管理员用户', '2021-01-14 17:31:40');
 INSERT INTO `sys_oper_log` VALUES (126, '个人信息', 2, 'com.saas.admin.controller.system.SysProfileController.updatePwd()', 'PUT', 1, '管理员', NULL, '/system/user/profile/updatePwd', '127.0.0.1', '内网IP', '123456 123456', '{\"msg\":\"新密码不能与旧密码相同\",\"code\":500}', 0, NULL, '2021-01-14 17:32:31');
 INSERT INTO `sys_oper_log` VALUES (127, '个人信息', 2, 'com.saas.admin.controller.system.SysProfileController.updatePwd()', 'PUT', 1, '管理员', NULL, '/system/user/profile/updatePwd', '127.0.0.1', '内网IP', '123456 1234563', 'null', 1, '不能修改超级管理员用户', '2021-01-14 17:32:39');
 INSERT INTO `sys_oper_log` VALUES (128, '用户头像', 2, 'com.saas.admin.controller.system.SysProfileController.avatar()', 'POST', 1, '管理员', NULL, '/system/user/profile/avatar', '127.0.0.1', '内网IP', '', 'null', 1, '不能修改超级管理员用户', '2021-01-14 17:38:36');
@@ -1169,7 +1169,7 @@ CREATE TABLE `sys_user` (
 -- Records of sys_user
 -- ----------------------------
 BEGIN;
-INSERT INTO `sys_user` VALUES (1, '2020-12-28 16:11:00.000000', 1, 0, 1, '2020-12-28 16:11:10.000000', 1, 'admin@lmf.com', '2020-12-28 16:11:24.000000', '1.1.1.1', 'admin', '18700092817', '管理员', '$2a$10$FLUle8pAygUwYyj5eprDjOze80kppIlDwIK4I1m0nvbf06.JgwjLu', NULL, NULL, NULL, 0, NULL, NULL, NULL, 0);
+INSERT INTO `sys_user` VALUES (1, '2020-12-28 16:11:00.000000', 1, 0, 1, '2020-12-28 16:11:10.000000', 1, 'admin@saas.com', '2020-12-28 16:11:24.000000', '1.1.1.1', 'admin', '18700092817', '管理员', '$2a$10$FLUle8pAygUwYyj5eprDjOze80kppIlDwIK4I1m0nvbf06.JgwjLu', NULL, NULL, NULL, 0, NULL, NULL, NULL, 0);
 INSERT INTO `sys_user` VALUES (2, '2020-12-31 14:13:35.000000', 1, 1, 1, '2020-12-31 14:43:17.311000', 1, 'aa@sina.com', NULL, NULL, 'adkj', '18988820191', 'qowi', NULL, NULL, 4, '1234455', 0, NULL, NULL, NULL, 0);
 INSERT INTO `sys_user` VALUES (3, '2021-01-07 11:25:54.000000', 1, 0, 1, '2021-01-20 15:29:46.291000', 3, '123@qq.com', NULL, NULL, '12345', '13545678909', '12345', '$2a$10$KMCbfHM5xZ8YUIi6nQ5xMuanoiHXKTpCnwKoN7Te2bpudQ/Avf29q', NULL, 2, NULL, 1, NULL, '12345/12345', '/profile/avatar/2021/01/15/6973168b-5a62-4d97-a6f9-047308c934de.jpeg', 0);
 INSERT INTO `sys_user` VALUES (4, '2021-01-07 16:17:00.008000', 1, 1, 0, '2021-01-08 11:44:54.059000', 1, '111@11.com', NULL, NULL, '12122', '13600991823', '3222', '$2a$10$u2QhBO8JJexekJ2SFy2G.elctRZH8mDNK.exDuZxQCLZXyZy8s4.W', NULL, 1, NULL, 1, NULL, NULL, NULL, 0);

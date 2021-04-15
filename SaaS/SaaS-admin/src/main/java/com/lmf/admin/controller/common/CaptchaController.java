@@ -37,7 +37,7 @@ public class CaptchaController {
 	private RedisCache redisCache;
 
 	// 验证码类型
-	@Value("${lmf.captchaType}")
+	@Value("${saas.captchaType}")
 	private String captchaType;
 
 	/**

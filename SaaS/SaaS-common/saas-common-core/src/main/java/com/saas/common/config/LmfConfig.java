@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
  *
  */
 @Component
-@ConfigurationProperties(prefix = "lmf")
+@ConfigurationProperties(prefix = "saas")
 public class LmfConfig {
 	/** 项目名称 */
 	private String name;
