@@ -1,0 +1,6 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.saas.common.security.config.CaptchaConfig,\
+  com.saas.common.security.service.TokenService,\
+  com.saas.common.security.service.SysPermissionService,\
+  com.saas.common.web.exception.GlobalExceptionHandler,\
+  com.saas.common.security.service.PermissionService

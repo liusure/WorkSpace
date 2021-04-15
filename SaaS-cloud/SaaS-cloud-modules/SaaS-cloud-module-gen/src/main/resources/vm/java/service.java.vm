@@ -1,0 +1,34 @@
+package ${packageName}.service;
+
+
+import ${packageName}.domain.${ClassName};
+import ${packageName}.repository.${ClassName}Dao;
+import com.saas.common.jpa.BaseDao;
+import com.saas.common.jpa.BaseService;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+/**
+ * ${functionName}Service接口
+ * 
+ * @author ${author}
+ * @date ${datetime}
+ */
+ @Service
+public class ${ClassName}Service extends BaseService<${ClassName}> {
+
+    @Autowired
+	private ${ClassName}Dao modelDao;
+
+
+	@Override
+	protected BaseDao<${ClassName}> getModelDao() {
+		return modelDao;
+	}
+
+	@Override
+	protected boolean isUseLocalCache() {
+		return false;
+	}
+}

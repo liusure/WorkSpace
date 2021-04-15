@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.saas.common.jpa.aspectj.DataPageableAspectj
+  

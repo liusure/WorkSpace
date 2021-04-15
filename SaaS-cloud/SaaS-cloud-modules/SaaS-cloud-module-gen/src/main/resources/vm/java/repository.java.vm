@@ -1,0 +1,15 @@
+package ${packageName}.repository;
+
+import com.saas.common.jpa.BaseDao;
+import ${packageName}.domain.${ClassName};
+
+/**
+ * ${functionName}repository接口
+ * 
+ * @author ${author}
+ * @date ${datetime}
+ */
+
+public interface ${ClassName}Dao extends BaseDao<${ClassName}> {
+
+}

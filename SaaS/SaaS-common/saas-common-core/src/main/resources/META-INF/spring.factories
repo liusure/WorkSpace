@@ -1,0 +1,8 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.saas.common.config.RedisConfig,\
+  com.saas.common.config.LmfConfig,\
+  com.saas.common.config.EhcacheConfig,\
+  com.saas.common.util.SpringUtils,\
+  com.saas.common.core.redis.RedisCache
+
+  

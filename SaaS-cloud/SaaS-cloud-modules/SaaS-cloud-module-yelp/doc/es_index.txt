@@ -1,0 +1,34 @@
+PUT yelp_resource
+{
+  "mappings" : {
+    "properties" : {
+       "id":    { "type": "keyword"  }, 
+      "name" : {"type" : "text"  },
+      "createTimeMills":  { "type": "long" }, 
+      "updateTimeMills":  { "type": "long" }, 
+      "content":   { "type": "keyword","index" :false },
+      "organization":{ "type": "keyword"  }, 
+      "subTitle":{ "type": "text"  }, 
+      "keywords":{ "type": "text"  }, 
+      "categorys":{ "type": "text"  }, 
+      "tags":{ "type": "text"  }, 
+      "delFlag":{ "type": "boolean"  }, 
+      "commentCount":{ "type": "integer"  }, 
+      "likeCount":{ "type": "integer"  }, 
+      "usedCount":{ "type": "integer"  }, 
+      "scoreCount":{ "type": "integer"  }, 
+      "score":{ "type": "double"  }, 
+      "coverPicUrl":{ "type": "keyword","index" :false },
+      "picUrls":{ "type": "keyword","index" :false },
+      "videoUrl":{ "type": "keyword","index" :false },
+      "recommendFlag":{ "type": "boolean"  }
+    }
+  },
+
+  "settings" : {
+        "index" : {
+            "number_of_shards" : 2,
+            "number_of_replicas" : 2
+        }
+  }
+}

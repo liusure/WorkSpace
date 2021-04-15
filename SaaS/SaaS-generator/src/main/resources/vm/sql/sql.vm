@@ -1,0 +1,8 @@
+-- 菜单 SQL
+insert into sys_menu (menu_name, parent_id, order_num, path, component, frame, cache, menu_type, visible, status_flag, perms, icon, create_user_id, create_time, update_user_id, update_time, remark,del_flag)
+values('${functionName}', ${parentMenuId}, '1', '${businessName}', '${moduleName}/${businessName}/index', 0, 1, 'C', 1, 1, '${permissionPrefix}:list', '#', 1, sysdate(), 0, null, '${functionName}菜单',0);
+
+-- 权限SQL
+INSERT INTO sys_privilege(name,permissions,status_flag,del_flag,create_user_id, create_time, update_user_id, update_time) 
+VALUES ('${functionName}权限', '${permissionPrefix}:query,${permissionPrefix}:list,${permissionPrefix}:add,${permissionPrefix}:edit,${permissionPrefix}:remove,${permissionPrefix}:export', 1, 0, 1, sysdate(), 0, null);
+
