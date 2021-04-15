@@ -8,7 +8,6 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.saas.common.core.annotation.Excel;
-import com.saas.common.core.annotation.Excel.ColumnType;
 
 /**
  * Entity基类

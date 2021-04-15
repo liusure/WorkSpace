@@ -1,6 +1,6 @@
 package ${packageName}.repository;
 
-import com.saas.common.jpa.BaseDao;
+import BaseDao;
 import ${packageName}.domain.${ClassName};
 
 /**

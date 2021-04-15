@@ -22,7 +22,6 @@ import com.saas.common.core.domain.SysDept;
 import com.saas.common.core.entity.AjaxResult;
 import com.saas.common.core.page.DataPageable;
 import com.saas.common.enums.BusinessType;
-import com.saas.common.security.utils.SecurityUtils;
 import com.saas.log.annotation.Log;
 import com.saas.system.service.SysDeptService;
 

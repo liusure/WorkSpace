@@ -5,8 +5,6 @@ import java.net.UnknownHostException;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.apache.commons.lang3.StringUtils;
-
 import com.saas.common.util.html.EscapeUtil;
 
 /**

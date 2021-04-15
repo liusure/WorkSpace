@@ -1,9 +1,9 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.saas.common.security.service.TokenService,\
-  com.saas.common.security.service.SysPermissionService,\
+  TokenService,\
+  SysPermissionService,\
   com.saas.common.security.handler.GlobalExceptionHandler,\
   com.saas.common.security.feign.FeignAutoConfiguration,\
   com.saas.common.security.feign.FeignRequestInterceptor,\
   com.saas.common.security.aspect.PreAuthorizeAspect,\
-  com.saas.common.security.service.PermissionService,\
-  com.saas.common.security.service.CurrentUserServiceImpl
+  PermissionService,\
+  CurrentUserServiceImpl

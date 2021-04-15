@@ -4,9 +4,7 @@ package ${packageName}.domain;
 import ${import};
 #end
 #if($table.crud)
-import com.saas.common.core.domain.BaseEntity;
 #elseif($table.tree)
-import com.saas.common.core.domain.TreeEntity;
 #end
 import javax.persistence.Entity;
 import javax.persistence.Table;

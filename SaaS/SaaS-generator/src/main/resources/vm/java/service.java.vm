@@ -7,7 +7,6 @@ import com.saas.common.jpa.BaseDao;
 import com.saas.common.jpa.BaseService;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 /**
  * ${functionName}Service接口

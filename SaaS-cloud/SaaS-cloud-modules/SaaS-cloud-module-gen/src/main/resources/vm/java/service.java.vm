@@ -3,8 +3,8 @@ package ${packageName}.service;
 
 import ${packageName}.domain.${ClassName};
 import ${packageName}.repository.${ClassName}Dao;
-import com.saas.common.jpa.BaseDao;
-import com.saas.common.jpa.BaseService;
+import BaseDao;
+import BaseService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
